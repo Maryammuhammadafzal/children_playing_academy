@@ -51,9 +51,9 @@
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
+  --primary: #DC143C;
   --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
+  --secondary: #FFD700;
   --secondary-foreground: oklch(0.205 0 0);
   --muted: oklch(0.97 0 0);
   --muted-foreground: oklch(0.556 0 0);
@@ -123,12 +123,6 @@
 
 p, li , a , input , button , label {
   font-family: var(--font-mono);
-}
-h1,
-h2,
-h3,
-h4 {
-  font-family: var(--font-sans);
 }
 
 h1 {

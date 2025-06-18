@@ -9,12 +9,12 @@ const HeroPage = () => {
       </video>
       <div className="overlay w-full h-full bg-black/20 absolute top-0 rounded-[10px] left-0 z-10"></div>
       <div className="w-full h-full absolute top-0 left-0 flex justify-center">
-        <div className="lg:w-[90%] h-auto flex flex-col justify-between items-center w-full lg:px-0 px-3 py-5">
-          <div className="header bg-amber-50 w-full h-[100px] flex justify-center items-center">
+        <div className="lg:w-[90%] h-auto flex flex-col justify-between items-center w-full lg:px-0 px-3 py-10">
+          <div className="header w-full h-[100px] flex justify-center items-center">
                 <Header/>
           </div>
-          <div className="max-w-4xl">
-                <h1 className="text-8xl text-white uppercase font-bold">Unleashing Potential at Little Minds Academy</h1>
+          <div className="w-full">
+                <h1 className="max-w-3xl text-8xl text-white uppercase font-bold leading-30 font-sans">Unleashing Potential at Little Minds Academy</h1>
           </div>
         </div>
       </div>
