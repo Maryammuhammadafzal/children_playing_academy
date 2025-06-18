@@ -1,14 +1,17 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Phudu, Roboto } from "next/font/google";
 import "./globals.css";
+import HeroPage from "./Hero/Page";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const phudu = Phudu({
+  variable: "--font-phudu",
   subsets: ["latin"],
+  weight: ['300' , '400', '500' , '600' , '700' , '800' , '900'],
+  display : 'swap'
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const roboto = Roboto({
+  variable: "--font-roboto",
   subsets: ["latin"],
 });
 
@@ -25,8 +28,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${phudu.variable} ${roboto.variable} antialiased p-3`}
       >
+        <HeroPage/>
         {children}
       </body>
     </html>
