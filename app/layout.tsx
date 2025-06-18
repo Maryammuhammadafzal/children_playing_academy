@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${phudu.variable} ${roboto.variable} antialiased p-3`}
+        className={`${phudu.variable} ${roboto.variable} antialiased p-6`}
       >
         <HeroPage/>
         {children}
