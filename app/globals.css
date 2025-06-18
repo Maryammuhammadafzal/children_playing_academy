@@ -130,3 +130,7 @@ h3,
 h4 {
   font-family: var(--font-sans);
 }
+
+h1 {
+  letter-spacing: 0%;
+}
