@@ -14,7 +14,7 @@ const HeroPage = () => {
                 <Header/>
           </div>
           <div className="w-full">
-                <h1 className="max-w-3xl text-8xl text-white uppercase font-bold leading-30 font-sans">Unleashing Potential at Little Minds Academy</h1>
+                <h1 className="xl:max-w-3xl md:max-w-2xl xl:text-8xl lg:text-[80px] md:text-8xl text-white uppercase font-bold leading-30 font-sans">Unleashing Potential at Little Minds Academy</h1>
           </div>
         </div>
       </div>
