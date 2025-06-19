@@ -12,7 +12,7 @@ const AboutPage = () => {
   })
   return (
     <div className="w-full h-auto flex md:flex-row flex-col py-10 justify-center items-center gap-10">
-      <div className="bg-primary md:h-[400px] relative max-w-[760px] md:w-[760px] rounded-[10px] p-10 flex justify-center ">
+      <div data-aos='zoom-in' className="bg-primary md:h-[400px] relative max-w-[760px] md:w-[760px] rounded-[10px] p-10 flex justify-center ">
         <p className="xl:text-[32px] lg:text-3xl sm:text-xl md:text-2xl xl:leading-10 text-white font-mono ">
           At Little Minds Academy, we believe that every child is unique and
           deserves a nurturing environment to learn, grow, and play. Our
@@ -20,7 +20,7 @@ const AboutPage = () => {
           experience for children, fostering creativity, curiosity, and
           confidence.
         </p>
-        <div className="absolute -bottom-20 z-10 -right-70">
+        <div data-aos='fade-right' data-aos-duration='2000' className="absolute -bottom-20 z-10 -right-70">
           <Image
             src="/images/bat-image.png"
             alt="bat-image"
@@ -30,7 +30,7 @@ const AboutPage = () => {
           />
         </div>
       </div>
-      <div
+      <div data-aos='zoom-in'
         className="sm:w-[610px] w-full h-[400px] flex justify-center items-center bg-cover bg-center relative"
         style={{ backgroundImage: `url('/images/texture.png')` }}
       >
@@ -43,7 +43,7 @@ const AboutPage = () => {
               Nature trails, scavenger hunts, and outdoor games that encourage
               teamwork and physical health.
             </p>
-            <div className="absolute bottom-0 right-0">
+            <div data-aos='fade-left' data-aos-duration='2000' className="absolute bottom-0 right-0">
               <Image
                 src="/images/basketball-image.png"
                 alt="basketball-image"

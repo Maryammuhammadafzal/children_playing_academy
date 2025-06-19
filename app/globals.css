@@ -132,3 +132,13 @@ p, li , a , input , button , label {
 h1 {
   letter-spacing: 0%;
 }
+
+/* .torn-paper {
+  -webkit-mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path fill='white' d='M0,10 Q10,0 20,10 T40,10 T60,10 T80,10 T100,10 V90 Q90,100 80,90 T60,90 T40,90 T20,90 T0,90 Z'/></svg>");
+  -webkit-mask-repeat: stretch;
+  -webkit-mask-size: cover;
+  mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path fill='white' d='M0,10 Q10,0 20,10 T40,10 T60,10 T80,10 T100,10 V90 Q90,100 80,90 T60,90 T40,90 T20,90 T0,90 Z'/></svg>");
+  mask-repeat: stretch;
+  mask-size: cover;
+  border-radius: 4px;
+} */
