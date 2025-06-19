@@ -121,6 +121,10 @@
   }
 }
 
+@theme {
+  --breakpoint-xs: 30rem;
+}
+
 p, li , a , input , button , label {
   font-family: var(--font-mono);
 }
