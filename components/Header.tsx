@@ -29,7 +29,7 @@ const Header = () => {
   return (
     <header className='flex w-full justify-between items-center h-full gap-3'>
         <Link href="/" className='cursor-pointer'>
-       <Image width={200} height={200} src="/images/logo.png" alt="logo" className='w-auto h-auto' />
+        <Image src="/images/logo.png" alt="logo" width={150} height={150} />
         </Link>
          <nav className=" w-auto h-auto flex justify-center items-center p-2">
           <ul className="md:flex gap-4 lg:gap-7 hidden xl:gap-10 w-full h-auto">
