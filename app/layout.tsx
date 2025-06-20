@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Phudu, Roboto } from "next/font/google";
 import "./globals.css";
-import HeroPage from "./hero/page";
+import HeroPage from "./Hero/Page.tsx";
 import Footer from "@/components/Footer";
 
 const phudu = Phudu({
