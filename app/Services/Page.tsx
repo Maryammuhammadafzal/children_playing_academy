@@ -1,7 +1,16 @@
+'use client'
 import Image from "next/image";
-import React from "react";
-import { Button } from "@/components/ui/button"
+import React, { useEffect } from "react";
+import { Button } from "@/components/ui/button";
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 const ServicePage = () => {
+        useEffect(()=> {
+    Aos.init({
+      duration: 1000,
+      once: true,
+    })
+  })
   return (
     <div className="w-full h-auto flex justify-center items-center py-20">
       <div className="w-full h-auto flex flex-col gap-14 justify-center items-center">
@@ -38,12 +47,14 @@ const ServicePage = () => {
                 </div>
 
                 <div className="w-full h-auto py-4 ">
-                       <Button className="text-primary bg-secondary/60 shadow-xl shadow-[#FFD70059]">Let's Discover</Button> 
+                  <Button className="text-primary bg-secondary/60 hover:bg-secondary/70 drop-shadow-xl drop-shadow-[#ffd900b1]">
+                    Let's Discover
+                  </Button>
                 </div>
               </div>
               <div className="right md:w-[50%] w-full flex justify-center items-center h-auto">
                 <div className="relative w-full flex justify-center items-center min-h-[360px]">
-                  <div className="w-[230px] h-[260px] object-cover border-4 absolute top-0 lg:right-20 md:right-0 max-sm:left-[30%] border-[#FFD70026] ">
+                  <div className="w-[230px] h-[260px] object-cover border-8 absolute top-0 lg:right-20 md:right-0 max-sm:left-[30%] border-[#FFD70026] ">
                     <Image
                       src="/images/image1.jpg"
                       alt="image"
@@ -52,7 +63,7 @@ const ServicePage = () => {
                       className="object-cover w-full h-full object-center"
                     />
                   </div>
-                  <div className="w-[230px] h-[260px] object-cover border-4 absolute top-20 z-20 lg:right-60 md:right-40 right-90 max-sm:left-[10%] border-[#FFD70026] ">
+                  <div className="w-[230px] h-[260px] object-cover border-8 absolute top-20 z-20 lg:right-60 md:right-40 right-90 max-sm:left-[10%] border-[#FFD70026] ">
                     <Image
                       src="/images/image2.jpg"
                       alt="image"
@@ -70,7 +81,7 @@ const ServicePage = () => {
             <div className="lg:w-[90%] w-full lg:px-0 px-3 max-w-7xl h-auto flex justify-between md:flex-row flex-col gap-4">
               <div className="left md:w-[50%] w-full flex justify-center items-center h-auto">
                 <div className="relative w-full flex justify-center items-center min-h-[360px]">
-                  <div className="w-[230px] h-[260px] object-cover border-4 absolute top-0 lg:right-20 md:right-0 max-sm:left-[30%] border-[#DC143C14] ">
+                  <div className="w-[230px] h-[260px] object-cover border-8 absolute top-0 lg:right-20 md:right-0 max-sm:left-[30%] border-[#DC143C14] ">
                     <Image
                       src="/images/image3.jpg"
                       alt="image"
@@ -79,7 +90,7 @@ const ServicePage = () => {
                       className="object-cover w-full h-full object-center"
                     />
                   </div>
-                  <div className="w-[230px] h-[260px] object-cover border-4 absolute top-20 z-20 lg:right-60 md:right-40 right-90 max-sm:left-[10%] border-[#DC143C14] ">
+                  <div className="w-[230px] h-[260px] object-cover border-8 absolute top-20 z-20 lg:right-60 md:right-40 right-90 max-sm:left-[10%] border-[#DC143C14] ">
                     <Image
                       src="/images/image4.jpg"
                       alt="image"
@@ -100,7 +111,8 @@ const ServicePage = () => {
                     <h4 className="text-secondary font-bold text-xl w-fit">
                       Outdoor Exploration:{" "}
                       <span className="text-base text-neutral-800 font-mono font-normal">
-                       Hands-on activities in science, technology, engineering, and math to spark curiosity and innovation.
+                        Hands-on activities in science, technology, engineering,
+                        and math to spark curiosity and innovation.
                       </span>
                     </h4>
                   </div>
@@ -108,10 +120,42 @@ const ServicePage = () => {
                     <h4 className="text-secondary font-bold text-xl w-fit">
                       Interactive Games:{" "}
                       <span className="text-base text-neutral-800 font-mono font-normal">
-                       Online and offline games designed to build cognitive and motor skills.
+                        Online and offline games designed to build cognitive and
+                        motor skills.
                       </span>
                     </h4>
                   </div>
+                </div>
+                <div className="w-full h-auto py-4 ">
+                  <Button className="text-secondary bg-primary hover:bg-primary drop-shadow-xl drop-shadow-[#DC143C59]">
+                    Let's Discover
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            className="w-full h-[560px] bg-cover bg-center flex justify-center relative items-center"
+            style={{ backgroundImage: `url('/images/banner-image.jpg')` }}
+          >
+            <div className="overlay bg-black/35 w-full h-full absolute top-0 left-0 z-10"></div>
+            <div className="w-full h-full absolute top-0 left-0 z-20 flex justify-center items-center">
+              <div className="flex flex-col justify-center items-center gap-8 p-3 max-w-4xl h-auto">
+                <h2 className="text-secondary text-6xl font-bold font-sans text-center">
+                  Join the Little Minds Family
+                </h2>
+                <p className="text-white text-lg text-center">
+                  At Little Minds Academy, we believe that every child is unique
+                  and deserves a nurturing environment to learn, grow, and play.
+                  Our platform combines education and play to create a holistic
+                  development experience for children, fostering creativity,
+                  curiosity, and confidence.
+                </p>
+                <div className="w-full flex justify-center items-center h-auto ">
+                  <Button className="text-secondary bg-primary hover:bg-primary drop-shadow-xl text-lg px-8 py-6 drop-shadow-[#DC143C59]">
+                    Join Now
+                  </Button>
                 </div>
               </div>
             </div>
