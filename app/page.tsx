@@ -1,9 +1,9 @@
 
-import AboutPage from "./about/Page";
-import FeaturesPage from "./features/Page";
-import BenefitsPage from "./benefits/Page";
-import ServicePage from "./services/Page";
-import ContactPage from "./contact/Page";
+import AboutPage from "./about/page";
+import FeaturesPage from "./features/page";
+import BenefitsPage from "./benefits/page";
+import ServicePage from "./services/page";
+import ContactPage from "./contact/page";
 
 export default function Home() {
   return <div className="w-full mx-auto h-auto flex flex-col items-center overflow-hidden">

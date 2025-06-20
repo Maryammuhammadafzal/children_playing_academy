@@ -1,49 +1,58 @@
+'use client'
 import { MenuIcon } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react'
+import { useState } from 'react';
 
 const Header = () => {
-   const navItem = [
-    {
-      link: "/hero",
-      name: "Home",
-    },
-    {
-      link: "/about",
-      name: "About us",
-    },
-    {
-      link: "/features",
-      name: "Features",
-    },
-    {
-      link: "/benefits",
-      name: "Benefits",
-    },
-    {
-      link: "/contact",
-      name: "Contact Us",
-    },
-  ];
-  return (
-    <header className='flex w-full justify-between items-center h-full gap-3'>
-        <Link href="/Hero" className='cursor-pointer'>
-        <Image src="/images/logo.png" alt="logo" width={150} height={150} />
-        </Link>
-         <nav className=" w-auto h-auto flex justify-center items-center p-2">
-          <ul className="md:flex gap-4 lg:gap-7 hidden xl:gap-10 w-full h-auto">
-            {
-              navItem.map(({ link, name }, index) => (
-                <li key={index} className="flex text-white flex-col items-center gap-1 h-auto w-auto uppercase text-sm group hover:font-bold font-normal">
-                  <a href={link}>{name}</a>
-                </li>
-              ))}
-          </ul>
-          <MenuIcon className="text-white text-xl md:hidden block"/>
-        </nav>
-    </header>
-  )
-}
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-export default Header
+  const navItems = [
+    { link: '/hero', name: 'Home' },
+    { link: '/about', name: 'About us' },
+    { link: '/features', name: 'Features' },
+    { link: '/benefits', name: 'Benefits' },
+    { link: '/contact', name: 'Contact Us' },
+  ];
+
+  return (
+    <header className="flex w-full justify-between items-center gap-3 py-4">
+      <Link href="/hero">
+        <Image
+          src="/images/logo.png"
+          alt="Company Logo"
+          width={150}
+          height={150}
+          className="object-contain"
+        />
+      </Link>
+      <nav className="flex items-center p-2">
+        <ul
+          className={`${
+            isMenuOpen ? 'flex' : 'hidden'
+          } md:flex flex-col md:flex-row gap-4 lg:gap-7 xl:gap-10 absolute md:static top-16 left-0 w-full md:w-auto bg-gray-800 md:bg-transparent p-4 md:p-0`}
+        >
+          {navItems.map(({ link, name }) => (
+            <li
+              key={name}
+              className="text-white uppercase text-sm group hover:font-bold font-normal"
+            >
+              <Link href={link} className="block p-2">
+                {name}
+              </Link>
+            </li>
+          ))}
+        </ul>
+        <button
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label="Toggle navigation menu"
+          className="md:hidden"
+        >
+          <MenuIcon className="text-white text-xl" />
+        </button>
+      </nav>
+    </header>
+  );
+};
+
+export default Header;
