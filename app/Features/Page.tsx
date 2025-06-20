@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 
 const FeaturesPage = () => {
-  let features_data = [
+  const features_data = [
     {
       title : 'Safe and Secure Environment',
       description : 'Your child’s safety is our priority. Our platform is designed to provide a protected and monitored space for learning and play.'

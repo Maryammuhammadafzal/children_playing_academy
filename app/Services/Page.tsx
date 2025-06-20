@@ -52,7 +52,7 @@ const ServicePage = () => {
                   </div>
                 </div>
 
-                <div data-aos="fade-right" className="w-full h-auto py-4 ">
+                <div data-aos="fade-right" className="w-full h-auto py-4">
                   <Button className="text-primary bg-secondary/60 hover:bg-secondary/70 drop-shadow-xl drop-shadow-[#ffd900b1]">
                     Let's Discover
                   </Button>

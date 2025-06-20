@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 
 const BenefitsPage = () => {
-  let benefits_data = [
+  const benefits_data = [
     {
       icon:'/images/benefit-icon1.png',
       title: "Enhanced Cognitive Skills",

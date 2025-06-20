@@ -4,7 +4,7 @@ import Link from 'next/link';
 import React from 'react'
 
 const Header = () => {
-   let navItem = [
+   const navItem = [
     {
       link: "/",
       name: "Home",
