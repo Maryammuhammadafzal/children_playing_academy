@@ -46,7 +46,7 @@ const BenefitsPage = () => {
         </h2>
 
         <div className="flex justify-center items-center flex-wrap gap-16 w-full h-auto">
-          {benefits_data &&
+          {
             benefits_data.map((benefit, index) => (
               <div
                 key={index}

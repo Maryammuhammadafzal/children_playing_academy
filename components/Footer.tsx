@@ -1,5 +1,5 @@
-import { Facebook, Instagram, Linkedin, TwitterIcon } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { FaFacebook, FaWhatsapp } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
@@ -29,24 +29,24 @@ const Footer = () => {
           </h4>
           <ul className="flex flex-col gap-2 font-mono text-black/60">
             <li>
-              <a href="/" className="text-base">
+              <Link href="/" className="text-base">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/" className="text-base">
+              <Link href="/" className="text-base">
                 About us
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/" className="text-base">
+              <Link href="/" className="text-base">
                 Benefits
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/" className="text-base">
+              <Link href="/" className="text-base">
                 Contact us
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

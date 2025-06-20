@@ -34,7 +34,7 @@ const ServicePage = () => {
                 >
                   <div className="flex ">
                     <h4 className="text-primary font-bold text-xl w-fit">
-                      STEM Adventures:{" "}
+                      STEM Adventures:
                       <span className="text-base text-neutral-800 font-mono font-normal">
                         Hands-on activities in science, technology, engineering,
                         and math to spark curiosity and innovation.
@@ -43,7 +43,7 @@ const ServicePage = () => {
                   </div>
                   <div className="flex ">
                     <h4 className="text-primary font-bold text-xl w-fit">
-                      Language and Literacy:{" "}
+                      Language and Literacy:
                       <span className="text-base text-neutral-800 font-mono font-normal">
                         Storytelling, reading exercises, and phonics games to
                         enhance communication skills.
@@ -133,7 +133,7 @@ const ServicePage = () => {
                 >
                   <div className="flex ">
                     <h4 className="text-secondary font-bold text-xl w-fit">
-                      Outdoor Exploration:{" "}
+                      Outdoor Exploration:
                       <span className="text-base text-neutral-800 font-mono font-normal">
                         Hands-on activities in science, technology, engineering,
                         and math to spark curiosity and innovation.
@@ -142,7 +142,7 @@ const ServicePage = () => {
                   </div>
                   <div className="flex ">
                     <h4 className="text-secondary font-bold text-xl w-fit">
-                      Interactive Games:{" "}
+                      Interactive Games:
                       <span className="text-base text-neutral-800 font-mono font-normal">
                         Online and offline games designed to build cognitive and
                         motor skills.

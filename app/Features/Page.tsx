@@ -37,7 +37,7 @@ const FeaturesPage = () => {
             </h2>
 
             <div className="flex justify-center items-center flex-wrap gap-0 xl:gap-14 w-full h-auto">
-               {features_data && features_data.map((feature , index)=>(
+               {features_data.map((feature , index)=>(
                 <div key={index} data-aos='zoom-in'
                       className="lg:w-[500px] w-[450px] md:w-[50%] md:h-auto md:my-43xs:my-2 my-1 lg:h-[300px] flex justify-center bg-cover bg-center relative"
                       // style={{ backgroundImage: `url('/images/texture.png')` }}
