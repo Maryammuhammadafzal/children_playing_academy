@@ -6,29 +6,29 @@ import React from 'react'
 const Header = () => {
    const navItem = [
     {
-      link: "/",
+      link: "/hero",
       name: "Home",
     },
     {
-      link: "/",
+      link: "/about",
       name: "About us",
     },
     {
-      link: "/",
+      link: "/features",
       name: "Features",
     },
     {
-      link: "/",
-      name: "Pricing",
+      link: "/benefits",
+      name: "Benefits",
     },
     {
-      link: "/",
+      link: "/contact",
       name: "Contact Us",
     },
   ];
   return (
     <header className='flex w-full justify-between items-center h-full gap-3'>
-        <Link href="/" className='cursor-pointer'>
+        <Link href="/Hero" className='cursor-pointer'>
         <Image src="/images/logo.png" alt="logo" width={150} height={150} />
         </Link>
          <nav className=" w-auto h-auto flex justify-center items-center p-2">
