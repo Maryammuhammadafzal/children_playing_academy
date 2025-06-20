@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-
+import { Button } from "@/components/ui/button"
 const ServicePage = () => {
   return (
     <div className="w-full h-auto flex justify-center items-center py-20">
@@ -11,9 +11,9 @@ const ServicePage = () => {
 
         <div className="flex  justify-center items-center flex-col gap-0 w-full h-auto">
           <div className="w-full  py-6 h-auto flex justify-center items-center bg-[#FFD70026]">
-            <div className="w-[90%] max-w-7xl h-auto flex justify-between md:flex-row flex-col gap-4">
-              <div className="left flex flex-col gap-6 justify-center w-[50%] h-auto">
-                <h3 className="font-bold text-4xl text-secondary font-sans">
+            <div className="lg:w-[90%] w-full lg:px-0 px-3 max-w-7xl h-auto flex justify-between md:flex-row flex-col gap-4">
+              <div className="left flex flex-col gap-6 justify-center w-full md:w-[50%] h-auto">
+                <h3 className="font-bold lg:text-4xl text-3xl max-xs:text-[28px] text-secondary font-sans">
                   Educational Programs
                 </h3>
                 <div className="flex flex-col gap-3 w-auto h-auto">
@@ -36,15 +36,82 @@ const ServicePage = () => {
                     </h4>
                   </div>
                 </div>
+
+                <div className="w-full h-auto py-4 ">
+                       <Button className="text-primary bg-secondary/60 shadow-xl shadow-[#FFD70059]">Let's Discover</Button> 
+                </div>
               </div>
-              <div className="right w-[50%]  flex justify-center items-center h-auto">
+              <div className="right md:w-[50%] w-full flex justify-center items-center h-auto">
                 <div className="relative w-full flex justify-center items-center min-h-[360px]">
-                       <div className="w-[230px] h-[260px] object-cover border-4 absolute top-0 lg:right-20 right-0 border-[#FFD70026] ">
-                         <Image src='/images/image1.jpg' alt="image" width={200} height={200} className="object-cover w-full h-full object-center"/>
-                       </div>
-                       <div className="w-[230px] h-[260px] object-cover border-4 absolute top-20 z-20 lg:right-60 right-40 border-[#FFD70026] ">
-                         <Image src='/images/image2.jpg' alt="image" width={200} height={200} className="object-cover w-full h-full object-center"/>
-                       </div>
+                  <div className="w-[230px] h-[260px] object-cover border-4 absolute top-0 lg:right-20 md:right-0 max-sm:left-[30%] border-[#FFD70026] ">
+                    <Image
+                      src="/images/image1.jpg"
+                      alt="image"
+                      width={200}
+                      height={200}
+                      className="object-cover w-full h-full object-center"
+                    />
+                  </div>
+                  <div className="w-[230px] h-[260px] object-cover border-4 absolute top-20 z-20 lg:right-60 md:right-40 right-90 max-sm:left-[10%] border-[#FFD70026] ">
+                    <Image
+                      src="/images/image2.jpg"
+                      alt="image"
+                      width={200}
+                      height={200}
+                      className="object-cover w-full h-full object-center"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="w-full  py-6 h-auto flex justify-center items-center bg-[#DC143C14]">
+            <div className="lg:w-[90%] w-full lg:px-0 px-3 max-w-7xl h-auto flex justify-between md:flex-row flex-col gap-4">
+              <div className="left md:w-[50%] w-full flex justify-center items-center h-auto">
+                <div className="relative w-full flex justify-center items-center min-h-[360px]">
+                  <div className="w-[230px] h-[260px] object-cover border-4 absolute top-0 lg:right-20 md:right-0 max-sm:left-[30%] border-[#DC143C14] ">
+                    <Image
+                      src="/images/image3.jpg"
+                      alt="image"
+                      width={200}
+                      height={200}
+                      className="object-cover w-full h-full object-center"
+                    />
+                  </div>
+                  <div className="w-[230px] h-[260px] object-cover border-4 absolute top-20 z-20 lg:right-60 md:right-40 right-90 max-sm:left-[10%] border-[#DC143C14] ">
+                    <Image
+                      src="/images/image4.jpg"
+                      alt="image"
+                      width={200}
+                      height={200}
+                      className="object-cover w-full h-full object-center"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div className="right flex flex-col gap-6 justify-center w-full md:w-[50%] h-auto">
+                <h3 className="font-bold lg:text-4xl text-3xl max-xs:text-[28px] text-primary font-sans">
+                  Play Activities
+                </h3>
+                <div className="flex flex-col gap-3 w-auto h-auto">
+                  <div className="flex ">
+                    <h4 className="text-secondary font-bold text-xl w-fit">
+                      Outdoor Exploration:{" "}
+                      <span className="text-base text-neutral-800 font-mono font-normal">
+                       Hands-on activities in science, technology, engineering, and math to spark curiosity and innovation.
+                      </span>
+                    </h4>
+                  </div>
+                  <div className="flex ">
+                    <h4 className="text-secondary font-bold text-xl w-fit">
+                      Interactive Games:{" "}
+                      <span className="text-base text-neutral-800 font-mono font-normal">
+                       Online and offline games designed to build cognitive and motor skills.
+                      </span>
+                    </h4>
+                  </div>
                 </div>
               </div>
             </div>
