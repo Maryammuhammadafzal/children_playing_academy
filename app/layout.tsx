@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Phudu, Roboto } from "next/font/google";
 import "./globals.css";
 import HeroPage from "./Hero/Page";
+import Footer from "@/components/Footer";
 
 const phudu = Phudu({
   variable: "--font-phudu",
@@ -32,6 +33,7 @@ export default function RootLayout({
       >
         <HeroPage/>
         {children}
+        <Footer/>
       </body>
     </html>
   );
