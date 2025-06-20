@@ -1,16 +1,16 @@
-'use client'
+"use client";
 import Image from "next/image";
 import React, { useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import Aos from 'aos'
-import 'aos/dist/aos.css'
+import Aos from "aos";
+import "aos/dist/aos.css";
 const ServicePage = () => {
-        useEffect(()=> {
+  useEffect(() => {
     Aos.init({
       duration: 1000,
       once: true,
-    })
-  })
+    });
+  });
   return (
     <div className="w-full h-auto flex justify-center items-center py-20">
       <div className="w-full h-auto flex flex-col gap-14 justify-center items-center">
@@ -22,10 +22,16 @@ const ServicePage = () => {
           <div className="w-full  py-6 h-auto flex justify-center items-center bg-[#FFD70026]">
             <div className="lg:w-[90%] w-full lg:px-0 px-3 max-w-7xl h-auto flex justify-between md:flex-row flex-col gap-4">
               <div className="left flex flex-col gap-6 justify-center w-full md:w-[50%] h-auto">
-                <h3 data-aos='fade-right' className="font-bold lg:text-4xl text-3xl max-xs:text-[28px] text-secondary font-sans">
+                <h3
+                  data-aos="fade-right"
+                  className="font-bold lg:text-4xl text-3xl max-xs:text-[28px] text-secondary font-sans"
+                >
                   Educational Programs
                 </h3>
-                <div data-aos='fade-right' className="flex flex-col gap-3 w-auto h-auto">
+                <div
+                  data-aos="fade-right"
+                  className="flex flex-col gap-3 w-auto h-auto"
+                >
                   <div className="flex ">
                     <h4 className="text-primary font-bold text-xl w-fit">
                       STEM Adventures:{" "}
@@ -46,7 +52,7 @@ const ServicePage = () => {
                   </div>
                 </div>
 
-                <div data-aos='fade-right' className="w-full h-auto py-4 ">
+                <div data-aos="fade-right" className="w-full h-auto py-4 ">
                   <Button className="text-primary bg-secondary/60 hover:bg-secondary/70 drop-shadow-xl drop-shadow-[#ffd900b1]">
                     Let's Discover
                   </Button>
@@ -54,7 +60,10 @@ const ServicePage = () => {
               </div>
               <div className="right md:w-[50%] w-full flex justify-center items-center h-auto">
                 <div className="relative w-full flex justify-center items-center min-h-[360px]">
-                  <div data-aos='zoom-in' className="w-[230px] h-[260px] object-cover border-8 absolute top-0 lg:right-20 md:right-0 max-sm:left-[30%] border-[#FFD70026] ">
+                  <div
+                    data-aos="zoom-in"
+                    className="w-[230px] h-[260px] object-cover border-8 absolute top-0 lg:right-20 md:right-0 max-sm:left-[30%] border-[#FFD70026] "
+                  >
                     <Image
                       src="/images/image1.jpg"
                       alt="image"
@@ -63,7 +72,10 @@ const ServicePage = () => {
                       className="object-cover w-full h-full object-center"
                     />
                   </div>
-                  <div data-aos='zoom-in' className="w-[230px] h-[260px] object-cover border-8 absolute top-20 z-20 lg:right-60 md:right-40 right-90 max-sm:left-[10%] border-[#FFD70026] ">
+                  <div
+                    data-aos="zoom-in"
+                    className="w-[230px] h-[260px] object-cover border-8 absolute top-20 z-20 lg:right-60 md:right-40 right-90 max-sm:left-[10%] border-[#FFD70026] "
+                  >
                     <Image
                       src="/images/image2.jpg"
                       alt="image"
@@ -81,7 +93,10 @@ const ServicePage = () => {
             <div className="lg:w-[90%] w-full lg:px-0 px-3 max-w-7xl h-auto flex justify-between md:flex-row flex-col gap-4">
               <div className="left md:w-[50%] w-full flex justify-center items-center h-auto max-md:order-2">
                 <div className="relative w-full flex justify-center items-center min-h-[360px]">
-                  <div data-aos='zoom-in' className="w-[230px] h-[260px] object-cover border-8 absolute top-0 lg:right-20 md:right-0 max-sm:left-[30%] border-[#DC143C14] ">
+                  <div
+                    data-aos="zoom-in"
+                    className="w-[230px] h-[260px] object-cover border-8 absolute top-0 lg:right-20 md:right-0 max-sm:left-[30%] border-[#DC143C14] "
+                  >
                     <Image
                       src="/images/image3.jpg"
                       alt="image"
@@ -90,7 +105,10 @@ const ServicePage = () => {
                       className="object-cover w-full h-full object-center"
                     />
                   </div>
-                  <div data-aos='zoom-in' className="w-[230px] h-[260px] object-cover border-8 absolute top-20 z-20 lg:right-60 md:right-40 right-90 max-sm:left-[10%] border-[#DC143C14] ">
+                  <div
+                    data-aos="zoom-in"
+                    className="w-[230px] h-[260px] object-cover border-8 absolute top-20 z-20 lg:right-60 md:right-40 right-90 max-sm:left-[10%] border-[#DC143C14] "
+                  >
                     <Image
                       src="/images/image4.jpg"
                       alt="image"
@@ -103,10 +121,16 @@ const ServicePage = () => {
               </div>
 
               <div className="right flex flex-col gap-6 justify-center w-full md:w-[50%] h-auto max-md:order-1">
-                <h3 data-aos='fade-left' className="font-bold lg:text-4xl text-3xl max-xs:text-[28px] text-primary font-sans">
+                <h3
+                  data-aos="fade-left"
+                  className="font-bold lg:text-4xl text-3xl max-xs:text-[28px] text-primary font-sans"
+                >
                   Play Activities
                 </h3>
-                <div data-aos='fade-left' className="flex flex-col gap-3 w-auto h-auto">
+                <div
+                  data-aos="fade-left"
+                  className="flex flex-col gap-3 w-auto h-auto"
+                >
                   <div className="flex ">
                     <h4 className="text-secondary font-bold text-xl w-fit">
                       Outdoor Exploration:{" "}
@@ -126,7 +150,7 @@ const ServicePage = () => {
                     </h4>
                   </div>
                 </div>
-                <div data-aos='fade-left' className="w-full h-auto py-4 ">
+                <div data-aos="fade-left" className="w-full h-auto py-4 ">
                   <Button className="text-secondary bg-primary hover:bg-primary drop-shadow-xl drop-shadow-[#DC143C59]">
                     Let's Discover
                   </Button>
@@ -135,7 +159,8 @@ const ServicePage = () => {
             </div>
           </div>
 
-          <div data-aos='zoom-in'
+          <div
+            data-aos="zoom-in"
             className="w-full h-[560px] bg-cover bg-center flex justify-center relative items-center"
             style={{ backgroundImage: `url('/images/banner-image.jpg')` }}
           >
