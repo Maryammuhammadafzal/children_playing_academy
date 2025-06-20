@@ -21,8 +21,8 @@ const FeaturesPage = () => {
     },
   ]
   return (
-    <div className="w-full h-auto flex justify-center items-center py-20">
-      <div className="vector absolute -left-5 top-[1500px] w-auto h-auto z-50">
+    <div className="w-full h-auto flex justify-center relative items-center py-20">
+      <div className="vector absolute -left-5 -top-30 w-auto h-auto z-50">
         <Image
           src="/images/vector-1.png"
           alt="vector"
@@ -31,8 +31,8 @@ const FeaturesPage = () => {
           className="w-[100px]"
         />
       </div>
-      <div className="w-full h-auto flex flex-col gap-14 justify-center items-center">
-          <h2 className="text-primary font-bold xl:text-6xl sm:text-4xl text-3xl lg:text-5xl md:text-4xl font-sans ">
+      <div className="w-[95%] h-auto flex flex-col gap-14 justify-center items-center">
+          <h2 className="text-primary font-bold xl:text-6xl md:text-5xl max-xs:text-3xl text-center text-4xl font-sans">
               Key Features
             </h2>
 

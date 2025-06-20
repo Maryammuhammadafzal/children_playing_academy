@@ -30,10 +30,10 @@ const BenefitsPage = () => {
     },
   ];
   return (
-    <div className="w-full h-auto flex justify-center items-center py-20">
-      <div className="vector absolute -right-20 top-[1900px] rotate-180 w-auto h-auto z-50">
+    <div className="w-full h-auto flex justify-center relative items-center py-20">
+      <div className="vector absolute -right-0 -top-10 max-md:hidden w-auto h-auto z-50">
         <Image
-          src="/images/vector-1.png"
+          src="/images/vector-2.png"
           alt="vector"
           width={200}
           height={100}
@@ -41,7 +41,7 @@ const BenefitsPage = () => {
         />
       </div>
       <div className="w-full h-auto flex flex-col gap-16 justify-center items-center">
-        <h2 className="text-primary font-bold xl:text-6xl sm:text-4xl text-3xl lg:text-5xl md:text-4xl font-sans ">
+        <h2 className="text-primary font-bold xl:text-6xl md:text-5xl max-xs:text-3xl text-center text-4xl font-sans ">
           Benefits for Your Child
         </h2>
 
