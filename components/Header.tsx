@@ -2,22 +2,22 @@
 import { MenuIcon } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState } from 'react';
-
+import { useState} from 'react';
+import { usePathname } from 'next/navigation';
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
-    { link: '/hero', name: 'Home' },
+    { link: '/', name: 'Home' },
     { link: '/about', name: 'About us' },
     { link: '/features', name: 'Features' },
     { link: '/benefits', name: 'Benefits' },
     { link: '/contact', name: 'Contact Us' },
   ];
-
+ 
   return (
     <header className="flex w-full justify-between items-center gap-3 py-4">
-      <Link href="/hero">
+      <Link href="/">
         <Image
           src="/images/logo.png"
           alt="Company Logo"
@@ -33,14 +33,15 @@ const Header = () => {
           } md:flex flex-col md:flex-row gap-4 lg:gap-7 xl:gap-10 absolute md:static top-16 left-0 w-full md:w-auto bg-gray-800 md:bg-transparent p-4 md:p-0`}
         >
           {navItems.map(({ link, name }) => (
-            <li
+            <Link
+            href="/"
               key={name}
-              className="text-white uppercase text-sm group hover:font-bold font-normal"
+              className="text-white uppercase cursor-pointer p-2 block text-sm font-normal"
             >
-              <Link href={link} className="block p-2">
-                {name}
-              </Link>
-            </li>
+              {/* < href='/' className="block cursor-pointer w p-2 ">
+              </> */}
+              {name}
+            </Link>
           ))}
         </ul>
         <button

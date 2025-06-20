@@ -30,7 +30,7 @@ const BenefitsPage = () => {
     },
   ];
   return (
-    <div className="w-full h-auto flex justify-center relative items-center py-20">
+    <div id="benefits" className="benefits w-full h-auto flex justify-center relative items-center py-20">
       <div className="vector absolute -right-0 -top-10 max-md:hidden w-auto h-auto z-50">
         <Image
           src="/images/vector-2.png"

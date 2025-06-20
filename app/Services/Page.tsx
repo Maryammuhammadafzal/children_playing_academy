@@ -12,7 +12,7 @@ const ServicePage = () => {
     });
   });
   return (
-    <div className="w-full h-auto flex justify-center items-center py-20">
+    <div id="services" className="services w-full h-auto flex justify-center items-center py-20">
       <div className="w-full h-auto flex flex-col gap-14 justify-center items-center">
         <h2 className="text-primary font-bold xl:text-6xl md:text-5xl max-xs:text-3xl text-center text-4xl font-sans">
           What We Offer

@@ -4,7 +4,7 @@ import React from "react";
 
 const ContactPage = () => {
   return (
-    <div className="w-full h-auto flex py-10 justify-center items-center">
+    <div id="contact" className="contact w-full h-auto flex py-10 justify-center items-center">
       <div className="w-[90%] max-w-7xl flex md:flex-row flex-col gap-10 justify-between items-center h-auto">
         <div className="left md:w-1/2 w-full flex flex-col gap-6 ">
           <h3 className="font-bold text-primary xl:text-6xl text-5xl max-sm:text-4xl font-sans ">

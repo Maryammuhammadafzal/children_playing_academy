@@ -11,7 +11,7 @@ const AboutPage = () => {
     })
   })
   return (
-    <div className="w-full h-auto flex md:flex-row flex-col py-10 justify-center items-center gap-10">
+    <div id="about" className="about w-full h-auto flex md:flex-row flex-col py-10 justify-center items-center gap-10">
       <div data-aos='zoom-in' className="bg-primary md:h-[400px] relative max-w-[760px] md:w-[760px] rounded-[10px] p-10 flex justify-center ">
         <p className="xl:text-[32px] lg:text-3xl sm:text-xl md:text-2xl xl:leading-10 text-white font-mono ">
           At Little Minds Academy, we believe that every child is unique and

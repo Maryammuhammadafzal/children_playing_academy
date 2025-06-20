@@ -3,7 +3,7 @@ import React from "react";
 // import HeroBgVideo from '@/public/video/Hero-bg-video.mp4'
 const HeroPage = () => {
   return (
-    <div className="w-[96%] mx-auto my-6 h-auto rounded-3xl  flex justify-center items-center relative">
+    <div id="hero" className="hero w-[96%] mx-auto my-6 h-auto rounded-3xl  flex justify-center items-center relative">
       <video autoPlay muted loop className="w-full rounded-[10px]">
         <source src="/video/Hero-bg-video.mp4" type="video/mp4" />
       </video>
