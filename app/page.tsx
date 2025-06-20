@@ -4,7 +4,7 @@ import FeaturesPage from "./Features/Page";
 import BenefitsPage from "./Benefits/Page";
 
 export default function Home() {
-  return <div className="w-full h-auto overflow-hidden ">
+  return <div className="w-[90%] h-auto overflow-hidden p-6 relative">
     <AboutPage/>
     <FeaturesPage/>
     <BenefitsPage/>

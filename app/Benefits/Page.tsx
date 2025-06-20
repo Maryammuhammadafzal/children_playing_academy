@@ -4,34 +4,34 @@ import React from "react";
 const BenefitsPage = () => {
   let benefits_data = [
     {
-      icon:'/images/benefit-icon1',
+      icon:'/images/benefit-icon1.png',
       title: "Enhanced Cognitive Skills",
       description: "Problem-solving, logical reasoning, and critical thinking.",
     },
     {
-      icon:'/images/benefit-icon2',
+      icon:'/images/benefit-icon2.png',
       title: "Improved Social Skills",
       description: "Teamwork, communication, and empathy.",
     },
     {
-      icon:'/images/benefit-icon3',
+      icon:'/images/benefit-icon3.png',
       title: "Boosted Creativity",
       description: "Artistic expression and innovative thinking.",
     },
     {
-      icon:'/images/benefit-icon4',
+      icon:'/images/benefit-icon4.png',
       title: "Physical Development",
       description: "Activities that promote coordination and overall health.",
     },
     {
-      icon:'/images/benefit-icon5',
+      icon:'/images/benefit-icon5.png',
       title: "Confidence Building",
       description: "Celebrating achievements and encouraging self-expression.",
     },
   ];
   return (
     <div className="w-full h-auto flex justify-center items-center py-20">
-      <div className="vector absolute -right-5 -top-40 w-auto h-auto z-50">
+      <div className="vector absolute -right-20 top-[1900px] rotate-180 w-auto h-auto z-50">
         <Image
           src="/images/vector-1.png"
           alt="vector"
@@ -40,7 +40,7 @@ const BenefitsPage = () => {
           className="w-[200px]"
         />
       </div>
-      <div className="w-full h-auto flex flex-col gap-14 justify-center items-center">
+      <div className="w-full h-auto flex flex-col gap-16 justify-center items-center">
         <h2 className="text-primary font-bold xl:text-6xl sm:text-4xl text-3xl lg:text-5xl md:text-4xl font-sans ">
           Benefits for Your Child
         </h2>
@@ -51,13 +51,13 @@ const BenefitsPage = () => {
               <div
                 key={index}
                 data-aos="zoom-in"
-                className="w-[340px] h-auto min-h-[190px] px-3 py-2 flex justify-center items-center"
+                className="w-[340px] h-auto min-h-[190px] px-3 py-2 gap-3 flex justify-center flex-col  items-center"
               >
                 <Image
                   src={benefit.icon}
                   alt="icon"
-                  width={70}
-                  height={70}
+                  width={60}
+                  height={60}
                 />
 
                 <div className="w-full h-full flex justify-center text-center flex-col gap-3 items-center">

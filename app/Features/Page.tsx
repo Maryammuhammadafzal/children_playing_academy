@@ -22,7 +22,7 @@ const FeaturesPage = () => {
   ]
   return (
     <div className="w-full h-auto flex justify-center items-center py-20">
-      <div className="vector absolute -left-5 -top-40 w-auto h-auto z-50">
+      <div className="vector absolute -left-5 top-[1500px] w-auto h-auto z-50">
         <Image
           src="/images/vector-1.png"
           alt="vector"
