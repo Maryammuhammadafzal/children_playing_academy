@@ -54,7 +54,7 @@ const ServicePage = () => {
 
                 <div data-aos="fade-right" className="w-full h-auto py-4">
                   <Button className="text-primary bg-secondary/60 hover:bg-secondary/70 drop-shadow-xl drop-shadow-[#ffd900b1]">
-                    Let's Discover
+                    {`Let's Discover`}
                   </Button>
                 </div>
               </div>
@@ -152,7 +152,7 @@ const ServicePage = () => {
                 </div>
                 <div data-aos="fade-left" className="w-full h-auto py-4 ">
                   <Button className="text-secondary bg-primary hover:bg-primary drop-shadow-xl drop-shadow-[#DC143C59]">
-                    Let's Discover
+                    {`Let's Discover`}
                   </Button>
                 </div>
               </div>
