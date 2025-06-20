@@ -34,7 +34,7 @@ const Header = () => {
         >
           {navItems.map(({ link, name }) => (
             <Link
-            href="/"
+            href={link}
               key={name}
               className="text-white uppercase cursor-pointer p-2 block text-sm font-normal"
             >
